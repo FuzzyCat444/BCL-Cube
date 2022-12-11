@@ -112,8 +112,8 @@ define line(screen : bool[60][45], x1 : i32, y1 : i32, x2 : i32, y2 : i32) -> bo
         a += ab_incr;
         b += ab_incr;
         if a >= a_max {
-            a -= a_max;
             px += x_incr;
+            a -= a_max;
         }
         if b >= b_max {
             py += y_incr;
